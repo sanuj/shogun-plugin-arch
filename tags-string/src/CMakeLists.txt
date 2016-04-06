@@ -1,3 +1,3 @@
 # Add subdirs for process.
-add_subdirectory( interfaces )
-add_subdirectory( shogun )
+# ADD_SUBDIRECTORY(interfaces)
+ADD_SUBDIRECTORY(shogun)
