@@ -9,6 +9,14 @@
 
 namespace shogun {
     %template(TagInt) Tag<int>;
-    %template(TagString) Tag<std::string>;
     %template(TagFloat) Tag<float>;
+    %template(TagString) Tag<std::string>;
+
+    %template(setInt) SGObject::set<int>;
+    %template(setFloat) SGObject::set<float>;
+    %template(setString) SGObject::set<std::string>;
+
+    %template(getInt) SGObject::get<int>;
+    %template(getFloat) SGObject::get<float>;
+    %template(getString) SGObject::get<std::string>;
 }

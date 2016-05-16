@@ -20,7 +20,7 @@ namespace shogun
 		    void set(Tag<T> tag, T value);
 
 			template <typename T>
-			T& get(Tag<T> tag);
+			T get(Tag<T> tag);
 
 		protected:
 			std::unordered_map<std::string, Any*> tag_map;
@@ -33,7 +33,7 @@ namespace shogun
 	}
 
 	template <typename T>
-	T& SGObject::get(Tag<T> tag)
+	T SGObject::get(Tag<T> tag)
 	{
 		Any* a = tag_map[tag.getName()];
 		return a->as<T>();
